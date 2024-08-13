@@ -1,0 +1,261 @@
+/* Estilos Globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffd3f0;
+    color: #4e4c4c;
+}
+
+/* Estilos del Menú */
+nav {
+    background-color: #f8c6d7;
+    padding: 10px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #d4b2b8;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #beabb0;
+}
+/* Estilos del Carrusel */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%; /* Ajustar a 100% para que el carrusel no exceda el contenedor */
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    background-color: #fcdcf9;
+    border: 1px solid #e1e1e1; /* Añadir borde opcional para el carrusel */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative; /* Añadir posición relativa para el banner */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-banner {
+    position: absolute; /* Posicionar el banner sobre la imagen del carrusel */
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px); /* Ajustar el ancho para el padding */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-banner h2 {
+    font-size: 66px;
+    margin: 0;
+    color: #ffffff; /* Color del texto del banner */
+}
+
+.carousel-banner p {
+    font-size: 32px;
+    margin: 10px 0 0;
+    color: white;
+}
+
+
+/* Estilos de los Botones de Navegación */
+.carousel-prev, .carousel-next {
+    background-color: #e91e63;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: #c2185b;
+}
+
+
+/* Estilos de la Sección */
+.container {
+    padding: 20px;
+}
+
+h2 {
+    color: #e91e63;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p, label {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos de la Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #e91e63;
+    color: white;
+}
+
+/* Estilos del Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c2185b;
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #f8c6d7;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-container div {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-about p, 
+.footer-contact p {
+    margin: 10px 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #db305e;
+}
+
+.footer-social .social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.footer-social .social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-social .social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #e91e63;
+    padding-top: 10px;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+    height: 200;
+}
